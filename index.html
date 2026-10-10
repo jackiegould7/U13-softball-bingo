@@ -78,8 +78,8 @@ commit;
 <script>
 'use strict';
 // Fill in your OWN project's public connection details before uploading.
-const SUPABASE_URL = '';
-const SUPABASE_PUBLIC_KEY = '';
+const SUPABASE_URL = 'https://ngkloedyqxthlpjwliui.supabase.co';
+const SUPABASE_PUBLIC_KEY = 'sb_publishable_gZeIAuHPIQfYYLESXktghw_63Kkm4y_';
 const $=id=>document.getElementById(id),escapeHtml=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])),money=x=>new Intl.NumberFormat('en-CA',{style:'currency',currency:'CAD'}).format(Number(x||0));
 let client,user,admin=false,snapshot,mine=[],adminCards=[],picks=[],selectedCard;
 const fallbackPlayers=['Sofia','Maddy','Talia','Cindy',...Array.from({length:9},(_,i)=>`Player ${i+5} (name pending)`)].map((name,i)=>({id:i+1,name}));
